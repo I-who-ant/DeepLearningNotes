@@ -5,4 +5,4 @@ __pycache__/
 .idea/
 dataset/Cat_and_Dog/
 dataset/hf_cache/
-souce_codeExplain/Transforms/output_grid.png
+docs/souce_codeExplain/Transforms/output_grid.png
