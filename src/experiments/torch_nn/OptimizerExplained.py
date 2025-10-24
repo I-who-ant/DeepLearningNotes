@@ -104,10 +104,10 @@ def compare_sgd_variants():
     print()
 
     for step in range(5):
-        optimizer1.zero_grad()
-        loss = rosenbrock(x1, y1)
-        loss.backward()
-        optimizer1.step()
+        optimizer1.zero_grad() # 清空上一步的梯度
+        loss = rosenbrock(x1, y1) # 计算当前位置的损失
+        loss.backward() # 计算损失对参数的梯度
+        optimizer1.step() # 更新参数
 
         if step == 0 or step == 4:
             print(f"  步骤{step}: 位置=({x1.item():.4f}, {y1.item():.4f}), "

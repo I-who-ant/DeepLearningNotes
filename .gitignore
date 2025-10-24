@@ -6,3 +6,22 @@ __pycache__/
 dataset/Cat_and_Dog/
 dataset/hf_cache/
 docs/souce_codeExplain/Transforms/output_grid.png
+
+# 数据文件 (太大,不上传)
+data/
+*.tar.gz
+*.gz
+
+# 模型文件 (太大,不上传)
+artifacts/models/
+*.pth
+*.pt
+*.onnx
+
+# TensorBoard日志
+artifacts/some_test/
+tensor_board/
+
+# 临时生成的图片和数据
+artifacts/*.arrow
+artifacts/*.npz
